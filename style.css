@@ -1,0 +1,685 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Top Header */
+.top-header {
+    background-color: #242424;
+    color: #fff;
+    padding: 10px 0;
+    font-size: 14px;
+}
+
+.top-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-header .left-info,
+.top-header .right-info {
+    display: flex;
+    gap: 20px;
+}
+
+.top-header p {
+    margin: 0;
+}
+
+/* Main Header */
+.header {
+    background-color: #242424;
+    padding: 20px 0;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1 {
+    color: #f4c13b;
+    font-family: "Playfair Display", serif;
+    font-weight: lighter;
+    font-size: 600;
+}
+
+.nav-links a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+.btn-book-now {
+    background-color: #f4c13b;
+    color: #000;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn-book-now:hover {
+    background-color: #e5b62a;
+}
+
+/* Container */
+.containers {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Book Now Section */
+.book-now-section {
+    background-image: url('./section1-img.png'); /* Replace with actual image path */
+    background-size: cover;
+    background-position: center;
+    padding: 100px 20px;
+    position: relative;
+    color: white;
+    text-align: center;
+}
+
+.book-now-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    z-index: 1;
+}
+
+.book-now-section .container {
+    position: relative;
+    z-index: 2; /* Bring the content to the foreground */
+}
+
+.book-now-section h1 {
+    font-size: 36px;
+    font-family: "Herr Von Muellerhoff", cursive;
+    margin-bottom: 20px;
+}
+
+.book-now-section p {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+/* Content Wrapper */
+.content-wrapper {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Booking Form */
+.booking-form {
+    display: flex;
+   flex-wrap: wrap;
+    gap: 5px;
+}
+
+.form-group {
+    display: flex;
+}
+
+.form-group label {
+    margin-bottom: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.form-group input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Submit Button */
+.btn-check-rates {
+    grid-column: span 2;
+    padding: 15px;
+    background-color: #f4c13b;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-check-rates:hover {
+    background-color: #e5b62a;
+}
+/* Amenities section */
+.amenities-section{
+    background-color: #242424;
+    color: white;
+    width: 100%;
+    height: 30%;
+}
+.container-sec{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+/* Award Winning Section */
+.award-winning-section {
+    background-color: #222;
+    color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.award-winning-section h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #fff; /
+}
+
+.award-winning-section p {
+    font-size: 18px;
+    margin-bottom: 40px;
+    color: #ddd;
+}
+
+
+.awards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+/* Individual Award Item */
+.award-item {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.award-item img {
+    width: 90%;
+    height: 90%;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.award-item h3 {
+    font-size: 20px;
+    color: #ffd700; 
+    margin-top: 10px;
+}
+
+
+.award-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+/* Best Rooms Section */
+.best-rooms-section {
+    background-image: url(./Rectangle\ 44\ \(2\).png);
+    background-color: #000;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.best-rooms-section h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.best-rooms-section p {
+    font-size: 18px;
+    margin-bottom: 40px;
+    color: #fff;
+}
+
+/* Rooms Grid */
+.rooms-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+/* Individual Room Item */
+.room-item {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: left;
+}
+
+.room-item img {
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.room-item h3 {
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.room-item p {
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+/* Book Now Button */
+.btn-room {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ffd700;
+    color: #333;
+    text-transform: uppercase;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn-room:hover {
+    background-color: #e6b800;
+}
+
+/* Hover Effect */
+.room-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+/* Get the Five Star Treatment Section */
+.five-star-treatment {
+    background-image: url('./Rectangle\ 17.png'); /* Background Image */
+    background-size: cover;
+    background-position: center;
+    padding: 80px 20px;
+    margin: -20px;
+    color: #fff;
+}
+
+.five-star-content {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+/* Slider Section */
+.five-star-slider {
+    max-width: 50%;
+    position: relative;
+}
+
+.slider {
+    position: relative;
+    overflow: hidden; /* Ensures only the active image is visible */
+    width: 100%;
+}
+
+.slide {
+    display: none; /* Hide all slides initially */
+    position: absolute;
+    width: 100%;
+    height: auto;
+}
+
+.slide.active {
+    display: block; /* Show only the active slide */
+}
+
+.slider img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Slider Controls */
+.slider-controls {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.prev, .next {
+    font-size: 40px;
+    color: #fff;
+    cursor: pointer;
+    user-select: none;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 5px 15px;
+    border-radius: 50%;
+}
+
+.prev:hover, .next:hover {
+    background: rgba(0, 0, 0, 0.6);
+}
+
+/* Text Section */
+.five-star-text {
+    max-width: 50%;
+    color: #fff;
+}
+
+.five-star-text h2 {
+    font-size: 36px;
+    color: #ffbf00;
+    margin-bottom: 20px;
+}
+
+.five-star-text h3 {
+    font-size: 24px;
+    color: #ffd700;
+    margin-bottom: 15px;
+}
+
+.five-star-text p {
+    font-size: 16px;
+    color: #fff;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Book Now Button */
+.btn-book-now {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #ffd700;
+    color: #333;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-book-now:hover {
+    background-color: #e6ac00;
+}
+/* Map Section */
+.map-section {
+    background-color: #242424;
+    padding: 60px 20px;
+}
+
+.map-content {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.map-content h2 {
+    font-size: 32px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.map-content p {
+    font-size: 16px;
+    color: #fff;
+    line-height: 1.6;
+}
+
+.map-embed {
+    max-width: 100%;
+    height: auto;
+}
+
+.map-embed iframe {
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+/* Footer Styles */
+.footer {
+    background-color: #000;
+    color: #fff;
+    padding: 40px 0;
+    text-align: left;
+  }
+  
+  .footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .footer-links {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+  
+  .footer-section {
+    width: 30%; /* Adjust width as needed */
+    margin-bottom: 20px;
+  }
+  
+  .footer-section h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-section ul li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .footer-bottom p {
+    margin: 5px 0;
+  }
+  
+  .social-media {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .social-media a {
+    margin: 0 10px;
+  }
+  
+  .social-media img {
+    width: 24px; /* Adjust size of icons */
+    height: auto;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .footer-links {
+      flex-direction: column; /* Stack sections on smaller screens */
+    }
+  
+    .footer-section {
+      width: 100%; /* Full width on mobile */
+    }
+  }
+  
+
+/* Header Section Responsiveness */
+@media (max-width: 668px) {
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar {
+        display: block;
+        text-align: center;
+    }
+
+    .navbar ul {
+        display: block;
+        padding-left: 0;
+    }
+
+    .navbar ul li {
+        display: inline-block;
+        margin: 10px 0;
+    }
+
+    .navbar ul li a {
+        padding: 10px 15px;
+        display: block;
+    }
+
+    .header-logo {
+        margin-bottom: 20px;
+    }
+}
+
+/* Book Now Section Responsiveness */
+@media (max-width: 768px) {
+    .book-now-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .book-now-text {
+        margin-bottom: 20px;
+    }
+
+    .book-now-form {
+        max-width: 100%;
+    }
+}
+
+/* Amenities Section Responsiveness */
+@media (max-width: 768px) {
+    .amenities-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .amenities-item {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}
+
+/* Award-Winning Section Responsiveness */
+@media (max-width: 768px) {
+    .award-winning-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .award-winning-image {
+        margin-bottom: 20px;
+    }
+}
+
+/* Best Rooms Section Responsiveness */
+@media (max-width: 768px) {
+    .best-rooms-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .best-rooms-item {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}
+
+/* Five-Star Treatment Section Responsiveness */
+@media (max-width: 768px) {
+    .five-star-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .five-star-text, .five-star-slider {
+        max-width: 100%;
+    }
+
+    .five-star-text {
+        margin-bottom: 20px;
+    }
+}
+
+/* Map Section Responsiveness */
+@media (max-width: 768px) {
+    .map-content {
+        text-align: center;
+    }
+
+    .map-embed iframe {
+        height: 300px;
+    }
+}
+
+/* Footer Section Responsiveness */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-about, .footer-links, .footer-contact {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .info-content {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .info-content p {
+        margin: 0 auto 20px;
+    }
+}

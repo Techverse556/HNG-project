@@ -1,0 +1,363 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Playfair Display", system-ui;;
+}
+/* Header Section */
+.header-section {
+    background-color: #242424;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    font-size: 0.9rem;
+    background-color: #242424;
+    color: #fff;
+}
+
+.header-top .location p,
+.header-top .weather-info p {
+    margin-right: 20px;
+    font-size: 0.85rem;
+    display: inline-block;
+}
+
+.weather-info {
+    display: flex;
+    gap: 15px;
+}
+
+.weather-info p {
+    display: flex;
+    align-items: center;
+}
+
+.weather-info i {
+    margin-right: 5px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #242424;
+}
+
+.navbar .logo h1 {
+    color: #fdd835;
+    font-size: 2rem;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover, .nav-links a.active {
+    color: #fdd835;
+}
+
+.header-buttons .book-btn {
+    background-color: #fdd835;
+    color: #000;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.header-buttons .book-btn:hover {
+    background-color: #fff;
+    color: #000;
+}
+/* Section after header with background image */
+.section-after-header {
+    background-image: url('./Rectangle\ 3\ \(5\).png'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 500px; 
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+}
+
+.section-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); 
+}
+
+.section-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    padding: 20px;
+}
+
+.section-content h1 {
+    font-size: 3rem;
+    color: #fff; 
+    margin-bottom: 20px;
+}
+
+.section-content p {
+    font-size: 1.2rem;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.section-content .cta-button {
+    background-color: #fdd835;
+    color: #000;
+    padding: 12px 24px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+}
+
+.section-content .cta-button:hover {
+    background-color: #fff;
+    color: #000;
+}
+.contact-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 10%;
+    background-color: #000;
+    color: #fff;
+}
+
+/* Get in Touch and Send Message Columns */
+.contact-column {
+    flex: 1;
+    padding: 20px;
+    color: #fff;
+}
+
+.get-in-touch {
+    background-color: #fdd835;
+    padding: 40px;
+    border-radius: 5px;
+}
+
+.get-in-touch h2, 
+.send-message h2 {
+    color: #000;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.get-in-touch p, 
+.send-message p {
+    color: #000;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.contact-details p {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #000;
+}
+
+/* Social Media Icons */
+.social-icons a {
+    margin-right: 10px;
+    font-size: 18px;
+    color: #000;
+    text-decoration: none;
+}
+
+/* Contact Form Styling */
+.send-message {
+    background-color: #000;
+    color: #fff;
+    padding: 40px;
+    border-radius: 5px;
+}
+
+.form-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.form-group input, 
+.form-group textarea {
+    width: 48%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+}
+
+button.cta-button {
+    background-color: #fdd835;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+button.cta-button:hover {
+    background-color: #ffc107;
+}
+/* Footer Section */
+.footer-section {
+    background-color: #101010;
+    color: #fff;
+    padding: 50px 10%;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* Footer Columns */
+.footer-column {
+    flex: 1;
+    padding: 20px;
+}
+
+.footer-column h3 {
+    color: #fdd835;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.footer-column ul li a:hover {
+    color: #fdd835;
+}
+
+.footer-column p {
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/* Newsletter Subscription */
+.newsletter-form {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.newsletter-form input {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    color: #000;
+}
+
+.newsletter-form button.cta-button {
+    padding: 10px 20px;
+    background-color: #fdd835;
+    color: #000;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+}
+
+.newsletter-form button:hover {
+    background-color: #ffc107;
+}
+
+/* Social Media Icons */
+.social-icons a {
+    margin-right: 10px;
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #fdd835;
+}
+
+/* Footer Bottom Section */
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid #333;
+    padding-top: 20px;
+    color: #888;
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+    }
+
+    .footer-column {
+        margin-bottom: 30px;
+    }
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .contact-section {
+        flex-direction: column;
+    }
+
+    .contact-column {
+        margin-bottom: 30px;
+    }
+
+    .form-group input, 
+    .form-group textarea {
+        width: 100%;
+    }
+}

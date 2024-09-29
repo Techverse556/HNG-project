@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/43875602af.js" crossorigin="anonymous"></script>
+    <title>HNG | ROOMS&SUITES</title>
+    <link rel="stylesheet" href="rooms.css">
+</head>
+<style class="inline">
+    .five-star-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 50px auto;
+    padding: 50px;
+    margin-top: -50px;
+    height: 80vh;
+    background-color: #000;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.five-star-content {
+    flex: 1;
+    padding: 20px;
+}
+
+.five-star-content h3 {
+    font-size: 1.5rem;
+    color: #fdd835; 
+    margin-bottom: 10px;
+}
+
+.five-star-content h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.five-star-content p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.read-more-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #fdd835;
+    color: #111;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.read-more-btn:hover {
+    background-color: #ffca28;
+}
+
+/* Image Styles */
+.five-star-image {
+    flex: 1;
+    padding: 20px;
+}
+
+.five-star-image img {
+    width: 50%;
+    height: 50%;
+    padding-left: 30px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.five-star-sections {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 50vh;
+    margin: 50px auto;
+    color: #fff;
+    margin-top: -50px;
+    padding: 20px;
+    background-image: url(./Rectangle\ 17\ \(2\).png);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.five-star-content {
+    flex: 1;
+    padding: 20px;
+}
+
+.five-star-content h3 {
+    font-size: 1.5rem;
+    color: #fdd835; 
+    margin-bottom: 10px;
+}
+
+.five-star-content h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.five-star-content p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.read-more-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #fdd835;
+    color: #111;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.read-more-btn:hover {
+    background-color: #ffca28;
+}
+
+/* Image Styles */
+.five-star-image {
+    flex: 1;
+    padding: 20px;
+}
+
+.five-star-image img {
+    width: 50%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+
+.five-star-sectionss {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 50vh;
+    margin: 50px auto;
+    padding: 20px;
+    margin-top: -50px;
+    background-image: url(./Rectangle\ 17\ \(3\).png);
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.five-star-content {
+    flex: 1;
+    padding: 20px;
+}
+
+.five-star-content h3 {
+    font-size: 1.5rem;
+    color: #fdd835; 
+    margin-bottom: 10px;
+}
+
+.five-star-content h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.five-star-content p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.read-more-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #fdd835;
+    color: #111;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.read-more-btn:hover {
+    background-color: #ffca28;
+}
+
+/* Image Styles */
+.five-star-image {
+    flex: 1;
+    padding: 20px;
+}
+
+.five-star-image img {
+    width: 50%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+/* Footer Styles */
+.footer-section {
+    background-color: #000;
+    color: #fff;
+    width: 100%;
+    height: 50vh;
+    margin-top: -50px;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.footer-left, .footer-right {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.footer-left h3, .footer-right h3 {
+    font-size: 1.5rem;
+    color: #fdd835;
+    margin-bottom: 15px;
+}
+
+.footer-left p, .footer-right p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.footer-right .social-icons a {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.footer-right .social-icons img {
+    width: 40px;
+    height: 40px;
+    transition: opacity 0.3s ease;
+}
+
+.footer-right .social-icons img:hover {
+    opacity: 0.7;
+}
+
+.footer-bottom {
+    padding: 20px 0;
+    border-top: 1px solid #333;
+}
+
+.footer-bottom p {
+    font-size: 0.9rem;
+    color: #ccc;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        text-align: left;
+    }
+
+    .footer-left, .footer-right {
+        padding: 10px 0;
+    }
+
+    .footer-right .social-icons a {
+        margin: 5px;
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .five-star-section {
+        flex-direction: column;
+    }
+
+    .five-star-content, .five-star-image {
+        padding: 10px;
+    }
+
+    .five-star-content h2 {
+        font-size: 1.8rem;
+    }
+
+    .five-star-content h3 {
+        font-size: 1.2rem;
+    }
+
+    .five-star-content p {
+        font-size: 0.9rem;
+    }
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+    .five-star-section {
+        flex-direction: column;
+    }
+
+    .five-star-content, .five-star-image {
+        padding: 10px;
+    }
+
+    .five-star-content h2 {
+        font-size: 1.8rem;
+    }
+
+    .five-star-content h3 {
+        font-size: 1.2rem;
+    }
+
+    .five-star-content p {
+        font-size: 0.9rem;
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .five-star-section {
+        flex-direction: column;
+    }
+
+    .five-star-content, .five-star-image {
+        padding: 10px;
+    }
+
+    .five-star-content h2 {
+        font-size: 1.8rem;
+    }
+
+    .five-star-content h3 {
+        font-size: 1.2rem;
+    }
+}
+</style>
+
+<body>
+    <!-- Top Header Section -->
+    <div class="top-header">
+        <div class="container">
+            <div class="left-info">
+                <p><strong>Bodija, Ibadan, Nigeria</strong></p>
+            </div>
+            <div class="right-info">
+                <p>Friday | 14°C</p>
+                <p>Saturday | 14°C</p>
+                <p>Sunday | 25°C</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Header Section -->
+    <header class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                   <h1>HNG Hotels&Suites</h1>
+                </div>
+                <nav class="nav-links">
+                    <a href="./index.html">Home</a>
+                    <a href="./rooms.html">Rooms & Suites</a>
+                    <a href="./facilities.html">Events</a>
+                    <a href="./facilities.html">Facilities</a>
+                    <a href="./contact.html">Contact</a>
+                    <a href="#" class="btn-book-now">Book Now</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <img src="./ASSET file zip file/ASSET file/Rectangle 3 (4).png" alt="" style="width: 100%;">
+        <div class="hero-content">
+            <h2 style="position: absolute; top: 50%; left: 45%; color: white;">Facilities & Services</h2>
+        </div>
+    </section>
+    <!--Section-->
+    
+    <section class="five-star-section">
+        <div class="five-star-image">
+            <img src="./ASSET file zip file/ASSET file/Group 16 (1).png" alt="Valet Parking">
+        </div>
+        <div class="five-star-content">
+            <h3>GET THE FIVE STAR TREATMENT</h3>
+            <h2>VALET PARKING</h2>
+            <p>Services Includes; In-Door Swimming Pool, Free Breakfast, High Speed Internet, Free Airport Pickup & Drop-Off, Car Rental, Beach Tour, Pool Lounge, Duplex-Style Serviced Apartments, Maximum Security, 24/7 Power Supply And Many More.</p>
+            <a href="#" class="read-more-btn">READ MORE</a>
+        </div>
+    </section>
+    <section class="five-star-sections">
+        <div class="five-star-content">
+            <h3>GET THE FIVE STAR TREATMENT</h3>
+            <h2>GYM AND SPA</h2>
+            <p>Services Includes; In-Door Swimming Pool, Free Breakfast, High Speed Internet, Free Airport Pickup & Drop-Off, Car Rental, Beach Tour, Pool Lounge, Duplex-Style Serviced Apartments, Maximum Security, 24/7 Power Supply And Many More.</p>
+            <p>Double M Exquisite Suites And Lounge Is A Budget Hotel In Lekki, Lagos.</p>
+            <a href="#" class="read-more-btn">READ MORE</a>
+        </div>
+        <div class="five-star-image">
+            <img src="./ASSET file zip file/ASSET file/Rectangle 18 (1).png" alt="Gym and Spa">
+        </div>
+    </section>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Five Star Treatment - Restaurant</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<section class="five-star-section">
+    <div class="five-star-image">
+        <img src="./ASSET file zip file/ASSET file/Rectangle 18 (2).png" alt="Restaurant">
+    </div>
+    <div class="five-star-content">
+        <h3>GET THE FIVE STAR TREATMENT</h3>
+        <h2>RESTAURANT</h2>
+        <p>Services Includes; In-Door Swimming Pool, Free Breakfast, High Speed Internet, Free Airport Pickup & Drop-Off, Car Rental, Beach Tour, Pool Lounge, Duplex-Style Serviced Apartments, Maximum Security, 24/7 Power Supply And Many More.</p>
+        <p>Double M Exquisite Suites And Lounge Is A Budget Hotel In Lekki, Lagos.</p>
+        <a href="#" class="read-more-btn">READ MORE</a>
+    </div>
+</section>
+
+<section class="five-star-sectionss">
+    <div class="five-star-content">
+        <h3>GET THE FIVE STAR TREATMENT</h3>
+        <h2>BAR</h2>
+        <p>Services includes; In-Door Swimming Pool, Free Breakfast, High speed Internet, Free Airport Pickup & Drop-Off, Car Rental, Beach Tour, Pool Lounge, Duplex-Style Serviced Apartments, Maximum Security, 24/7 Power Supply and many more. Double M Exquisite Suites and Lounge is a budget hotel in Lekki, Lagos.</p>
+        <p>Double M Exquisite Suites And Lounge Is A Budget Hotel In Lekki, Lagos.</p>
+        <a href="#" class="read-more-btn">READ MORE</a>
+    </div>
+    <div class="five-star-image">
+        <img src="./ASSET file zip file/ASSET file/Group 16.png" alt="Gym and Spa">
+    </div>
+</section>
+
+<section class="five-star-section">
+    <div class="five-star-image">
+        <img src="./ASSET file zip file/ASSET file/Rectangle 18 (3).png" alt="Restaurant">
+    </div>
+    <div class="five-star-content">
+        <h3>GET THE FIVE STAR TREATMENT</h3>
+        <h2>SWIMMING POOL</h2>
+        <p>Services Includes; In-Door Swimming Pool, Free Breakfast, High Speed Internet, Free Airport Pickup & Drop-Off, Car Rental, Beach Tour, Pool Lounge, Duplex-Style Serviced Apartments, Maximum Security, 24/7 Power Supply And Many More.</p>
+        <p>Double M Exquisite Suites And Lounge Is A Budget Hotel In Lekki, Lagos.</p>
+        <a href="#" class="read-more-btn">READ MORE</a>
+    </div>
+</section>
+<!-- Footer Section -->
+<footer class="footer-section">
+    <div class="footer-content">
+        <div class="footer-left">
+            <h3>Contact Us</h3>
+            <p>Address: Lekki, Lagos, Nigeria</p>
+            <p>Phone: +234 123 4567 890</p>
+            <p>Email: info@doublemhotels.com</p>
+        </div>
+        <div class="footer-right">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+                <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+                <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+                <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+                <a href="#"><img src="linkedin-icon.png" alt="LinkedIn"></a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 Double M Exquisite Suites and Lounge. All rights reserved.</p>
+    </div>
+</footer>
+
+</body>
+</html>
